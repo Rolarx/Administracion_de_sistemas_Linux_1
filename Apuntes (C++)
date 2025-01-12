@@ -109,8 +109,39 @@ int main()
          
             
         }
-    case 2:
-        
+        case 2:
+        {
+            int valor3;
+            cout<<"1. -l \n";
+            cout<<"2. -i \n";
+            cout<<"3. -r \n";
+            cout<<"4. -f \n";
+            cout<<"5. -i \n";
+            cout<<"6. -s \n";
+            cout<<"7. -1 \n";
+            cin>>valor3;
+            switch(valor3)
+            {
+                case 1:
+                {
+                    cout<<"la opción -l (large) nos permite pedirle información más detallada al comando, usualmente empleado con ls \n";
+                    break;
+                }
+                case 2:
+                {
+                    cout<<" La opción -i (interactive) pide confirmación para ejecutar el comando \n";
+                    break;
+                }
+                case 3: 
+                {
+                    cout<<"La opción -r (recursive) repite el comando \n";
+                    break;
+                }
+                
+            }
+            
+        }
+            
     }
     return 0;
 }
