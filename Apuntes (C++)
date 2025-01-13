@@ -14,6 +14,7 @@ int main()
     cout<<"2. Opciones \n";
     cout<<"3. Rutas \n";
     cout<<"4. Usos de Linux \n";
+    cout<<"5. Propiedades de Linux \n";
     cout<<"          Ingrese la opción deseada       \n";
     cin>>valor;
     do
@@ -148,8 +149,31 @@ int main()
                 }
              break;   
             }
-                
+            case 3:
+            {
+                cout<<"Las rutas pueden ser absolutas (Partiendo desde /) o relativas, más acortadas, partiendo desde una carpeta más cercana a la actual \n";
+                cout<<"Por ejemplo: ~/carpeta vs user/carpeta. Recordar que ~ es un atajo para /home/user.";
+                break;
+            }
+            case 4:
+            {
+                cout<<"Es importante recordar por qué es importante aprender sistemas en Linux, y las razones son: \n";
+                cout<<"1.- Gran presencia en servidores a nivel mundial \n";
+                cout<<"2.- Utilizado en el internet de las cosas \n";
+                cout<<"3.- Aplicaciones para desarrollo web, diseñadas para ser ejecutadas en Linux \n";
+                cout<<"4.- Gran presencia en el ambito laboral tecnologico, ya sea como desarrollador o en el ambito de la ciberseguridad \n";
+                break;
+            }
+            case 5:
+            {
+                cout<<"Las propiedades de Linux son: \n";
+                cout<<"1.- Codigo de uso libre con opción a comercialización de modificaciones siempre dando créditos al autor original \n";
+                cout<<"2.- OS modular altamente personalizable \n";
+                cout<<"3.- Un sistema muy fuertemente ligado a la shell y la interfaz de interpretación de texto introducido por el usuario \n";
+            }
+          
         }
+        
     } while((valor2||valor3) != 0);    
     return 0;
 }
